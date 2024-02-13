@@ -56,16 +56,5 @@ public class UserEntityController {
 	{
 		return userService.updateUserEntity(userRequest, id);
 	}
-	@PostMapping("/{usertype}/{id}/{password}")
-	public UserEntityresponse saveUserEntityResponse1(@RequestBody UserEntityrequest userRequest,@PathVariable("usertype") UserType usertype,@PathVariable("id") Long id,@PathVariable("password") String password) {
-		return userService.saveUserEntity1(userRequest,usertype,id,password);
-	}
-	@PostMapping("/addcourse/{usertype}/{id}/{password}")
-	public CourseEntityResponse saveCourseEntityResponse(@RequestBody CourseEntityrequest userrequest,@PathVariable("usertype") UserType usertype,@PathVariable("id") Long id,@PathVariable("password") String password) {
-		return userService.saveCourseEntity1(userrequest,usertype,id,password);
-	}
-	@PostMapping("/updatecourse/{usertype}/{id}/{password}/{courseid}")
-	public CourseEntityResponse updateCourseEntityResponse(@RequestBody CourseEntityrequest userrequest,@PathVariable("usertype") UserType usertype,@PathVariable("id") Long id,@PathVariable("password") String password,@PathVariable("courseid") Long courseid) {
-		return userService.updateCourseEntity1(userrequest, usertype, id, password, courseid);
-	}
+	
 }
