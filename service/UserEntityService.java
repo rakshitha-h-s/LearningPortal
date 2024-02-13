@@ -19,8 +19,6 @@ void deleteUserentity(Long id);
 UserEntityresponse saveUserEntity(UserEntityrequest userentityrequest);
 UserEntityresponse updateUserEntity(UserEntityrequest userentityrequest,Long id);
 UserEntityresponse saveUserEntity1(UserEntityrequest userentityrequest,UserType usertype,Long id,String password);
-CourseEntityResponse saveCourseEntity1(CourseEntityrequest courseentityrequest,UserType usertype,Long id,String password);
-CourseEntityResponse updateCourseEntity1(CourseEntityrequest courseentityrequest,UserType usertype,Long id,String password,Long courseid);
-//FavoriteEntityresponse saveFavoriteEntity(CourseEntityrequest courseentityrequest,UserType usertype,Long id,String coursename);
+}
 }
 
